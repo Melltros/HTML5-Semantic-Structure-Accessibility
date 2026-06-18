@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Jane Doe - Portfolio</title>
+    <meta name="description" content="Learn more about Jane Doe, her background, and her passion for accessible web development.">
+    <meta name="author" content="Jane Doe">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <div class="site-logo" aria-hidden="true">Jane<span>Doe</span></div>
+            <nav class="main-nav" aria-label="Main Navigation" role="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" aria-current="page">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="container" role="main">
+        <article aria-labelledby="about-heading">
+            <h1 id="about-heading">About Me</h1>
+            <p>Hello! I am a passionate web developer with a strong focus on building inclusive and accessible digital experiences. I believe the web is for everyone, and I strive to implement WCAG guidelines strictly in every project I touch.</p>
+            
+            <section aria-labelledby="skills-heading">
+                <h2 id="skills-heading">My Skills</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Semantic HTML5</h3>
+                        <p>Structuring documents with meaning and clarity.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Advanced CSS</h3>
+                        <p>Fluid typography, CSS Grid, Flexbox, and accessible design systems.</p>
+                    </div>
+                    <div class="card">
+                        <h3>ARIA & Screen Readers</h3>
+                        <p>Navigating through NVDA and VoiceOver to ensure full compatibility.</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; <time datetime="2026">2026</time> Jane Doe. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

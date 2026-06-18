@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Jane Doe - Portfolio</title>
+    <meta name="description" content="Contact Jane Doe for web development inquiries and accessible design projects.">
+    <meta name="author" content="Jane Doe">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <div class="site-logo" aria-hidden="true">Jane<span>Doe</span></div>
+            <nav class="main-nav" aria-label="Main Navigation" role="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="container" role="main">
+        <section aria-labelledby="contact-heading">
+            <h1 id="contact-heading">Get In Touch</h1>
+            <p style="text-align: center;">Interested in working together or have a question about accessibility? Send me a message!</p>
+            
+            <form class="contact-form" action="#" method="POST" novalidate aria-label="Contact Form">
+                <div class="form-group">
+                    <label for="name">Full Name <span aria-hidden="true" style="color:var(--error-color)">*</span></label>
+                    <input type="text" id="name" name="name" class="form-control" required aria-required="true" autocomplete="name" placeholder="E.g., John Smith">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address <span aria-hidden="true" style="color:var(--error-color)">*</span></label>
+                    <input type="email" id="email" name="email" class="form-control" required aria-required="true" autocomplete="email" placeholder="E.g., john@example.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject" class="form-control">
+                        <option value="freelance">Freelance Inquiry</option>
+                        <option value="accessibility">Accessibility Audit</option>
+                        <option value="general">General Question</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Your Message <span aria-hidden="true" style="color:var(--error-color)">*</span></label>
+                    <textarea id="message" name="message" class="form-control" rows="5" required aria-required="true" placeholder="How can I help you?"></textarea>
+                </div>
+                
+                <button type="submit" class="button" aria-label="Send Message">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; <time datetime="2026">2026</time> Jane Doe. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

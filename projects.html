@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Jane Doe - Portfolio</title>
+    <meta name="description" content="View the web development portfolio and projects of Jane Doe.">
+    <meta name="author" content="Jane Doe">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <div class="site-logo" aria-hidden="true">Jane<span>Doe</span></div>
+            <nav class="main-nav" aria-label="Main Navigation" role="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html" aria-current="page">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="container" role="main">
+        <h1 id="projects-heading">My Projects</h1>
+        <p>A collection of my work showcasing semantic markup and accessible design.</p>
+        
+        <div class="card-grid" aria-label="List of projects">
+            <article class="card" aria-labelledby="proj1-heading">
+                <h2 id="proj1-heading">E-Commerce Redesign</h2>
+                <p>Revamped an e-commerce platform to be fully navigable via keyboard, improving screen reader compatibility by 100%.</p>
+                <a href="#" aria-label="Read more about E-Commerce Redesign project">Read Case Study</a>
+            </article>
+            
+            <article class="card" aria-labelledby="proj2-heading">
+                <h2 id="proj2-heading">Accessible Component Library</h2>
+                <p>Built an open-source library of highly accessible UI components using native HTML features and minimal ARIA interventions.</p>
+                <a href="#" aria-label="Read more about Accessible Component Library project">View Repository</a>
+            </article>
+            
+            <article class="card" aria-labelledby="proj3-heading">
+                <h2 id="proj3-heading">Non-Profit Landing Page</h2>
+                <p>A lightweight, fast, and SEO-optimized landing page designed with high contrast themes for users with visual impairments.</p>
+                <a href="#" aria-label="Read more about Non-Profit Landing Page project">Visit Website</a>
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; <time datetime="2026">2026</time> Jane Doe. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
